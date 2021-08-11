@@ -1,1 +1,6 @@
-<h1>botones</h1>
+<div class="d-flex justify-content-center">
+    <button *ngIf="servicePelicula.indexPelicula>1" class="btn" [style]="style2"(click)="verAnterior()">{{textoBoton1}}</button>
+    <button *ngIf="servicePelicula.indexPelicula==1" class="btn"  [style]="style">{{textoBoton1}}</button>
+    <button *ngIf="servicePelicula.indexPelicula!=this.servicePelicula.genero.length"  class="btn" [style]="style2"(click)="verSiguiente()">{{textoBoton2}} </button>
+    <button *ngIf="servicePelicula.indexPelicula==this.servicePelicula.genero.length"  class="btn" [style]="style">{{textoBoton2}} </button>
+</div>

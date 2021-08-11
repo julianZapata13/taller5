@@ -45,6 +45,19 @@ export class PeliculasService {
     
   }
 
+  aumentarIndexPelicula(){
+    
+    this.indexPelicula=this.indexPelicula+1;
+   
+
+  }
+
+  disminuirIndexPelicula(){
+    
+    this.indexPelicula=this.indexPelicula-1;
+    
+  }
+
 
   
  

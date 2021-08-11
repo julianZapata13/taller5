@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { PeliculasService } from '../services/peliculas.service';
 
 @Component({
   selector: 'app-carrusel',
@@ -7,10 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CarruselComponent implements OnInit {
 
+  @Input() peliSelect:string=""
 
 
-
-  constructor() { 
+  constructor(public servicePelicula: PeliculasService) { 
 
   }
 
